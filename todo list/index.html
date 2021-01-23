@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO List</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.3.1/d3.min.js"></script> -->
+    <script asyn defer src="script.js"></script>
     
 </head>
+
 <body>
-    <section class="ak">
-    <div class="container">
-		<div class="row">
-			<div class="intro col-12">
-				<h1>To-Do List</h1>
-				<div>
-					<div class="border1"></div>
-				</div>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="helpText col-12">
-				<p id="first">Enter text into the input field to add items to your list.</p>
-				<p id="second">Click the item to mark it as complete.</p>
-				<p id="third">Click the "X" to remove the item from your list.</p>
-			</div>
-		</div>
+    <div id="box">
+        <center>
+            <h1>To Do List</h1>
+        </center>
+        <div class="inbox">
+            <label for="inpbox" class="ele">New Task:-</label>
+            <input type="text" id="inpbox" placeholder="Enter there the new task">
+            <div class="btn" id="btnadd">ADD </div>
+        </div>
+        <center>
+            <div class="btn" id="btnsort" disabled >SORT</div>
+            <div class="btn" id="btnclear">CLEAR</div>
+            <div class="btn" id="btnremove">REMOVE DONE</div>
+        </center>
+        <hr>
+       <ul class="data">
+           <!-- <li class="item change">ajsdflkja</li> -->
+           
 
-		<div class="row">
-			<div class="col-12">
-				<input id="userInput" type="text" placeholder="New item..." maxlength="27">
-				<button id="enter"><i class="fas fa-pencil-alt">Add</i></button>
-			</div>
-		</div>
-
-		<!-- Empty List -->
-		<div class="row">
-			<div class="listItems col-12">
-				<ul class="col-12 offset-0 col-sm-8 offset-sm-2">
-				</ul>
-			</div>
-		</div>
-        <script src="code.js"></script>
+       </ul>
+       <hr>
     </div>
-</section>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 </body>
+
 </html>
